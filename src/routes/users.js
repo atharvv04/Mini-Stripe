@@ -225,7 +225,7 @@ router.get('/dashboard', async (req, res, next) => {
       `SELECT 
         COUNT(*) as total_transactions,
         COUNT(CASE WHEN status = 'completed' THEN 1 END) as completed_transactions,
-        COALESCE(SUM(CASE WHEN status = 'completed' THEN amount ELSE 0 END), 0) as total_amount
+        COALESCE(SUM(CASE WHEN status = 'completed' THEN t.amount ELSE 0 END), 0) as total_amount
        FROM transactions t
        JOIN payment_links pl ON t.payment_link_id = pl.id
        WHERE pl.user_id = $1`,
