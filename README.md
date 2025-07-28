@@ -166,7 +166,7 @@ npm run migrate     # Run database migrations
 ### ![Landing Page](images/Pricing.png)
 **Description**: Most imporant section of the project.
 
-### ![Landing Page](images/landing_page_1.png) ![Landing Page](images/landing_page_2.png)
+### ![Landing Page](images/Landing_page_1.png) ![Landing Page](images/Landing_page_2.png)
 **Description**: The main landing page showing the Mini-Stripe branding, hero section with call-to-action buttons, and feature highlights.
 
 ### ![Landing Page](images/Dashboard.png)
